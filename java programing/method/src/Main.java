@@ -18,14 +18,7 @@ public class Main {
         loop(40,50);
 
 
-
-
-
     }
-
-
-
-
 
 //        public static void loop1(){
 //       for(int i=0;i<=10;i++){
