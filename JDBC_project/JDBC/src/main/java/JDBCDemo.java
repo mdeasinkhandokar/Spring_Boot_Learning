@@ -5,7 +5,7 @@ public class JDBCDemo {
 
     public static final String URL = "jdbc:mysql://localhost:3306/demo_db";
     public static final String USER = "root";
-    public static final String PASSWORD = "MyPassword";
+    public static final String PASSWORD = "Easin#@12";
     private static String sql;
     private static Connection conn;
 
