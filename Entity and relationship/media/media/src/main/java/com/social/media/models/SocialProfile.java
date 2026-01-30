@@ -8,20 +8,16 @@ import java.util.List;
 
 @Entity
 public class SocialProfile {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @OneToOne
-//    @JoinColumn(name="social_user")
-//    private SocialUser user;
-
     @OneToOne
     @JoinColumn(name="social_user")
-//    @JoinColumn(name="social_profile_id")
-    private SocialProfile user ;
+    private SocialUser user;
 
-    @OneToMany
-    private List<Post> posts = new ArrayList<>();
+    public void setUser(SocialUser user1) {
 
+    }
 }

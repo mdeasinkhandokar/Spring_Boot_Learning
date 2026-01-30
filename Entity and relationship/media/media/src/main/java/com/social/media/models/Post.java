@@ -1,10 +1,7 @@
 package com.social.media.models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Post {
@@ -14,4 +11,12 @@ public class Post {
     private  Long id;
 
 
+    @ManyToMany
+    @JoinColumn(name="user_id")
+    private SocialUser socialUser;
+
+
+    public void setSocialUser(SocialUser user1) {
+
+    }
 }
